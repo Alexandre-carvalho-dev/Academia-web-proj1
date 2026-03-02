@@ -1,0 +1,16 @@
+body{
+    background-color:rgb(10, 1, 46);
+}
+.div0{
+    text-align: center; margin-top: 5%;
+}
+.nav{
+   display: flex;justify-content: space-around;color: #ccc
+}
+.div1{
+ margin-top: 5%;color: #ccc;text-align: center;
+}
+.div1_0,.div1_1,.div1_2,.div1_3,.div1_4{
+box-shadow:  0px 0px 10px rgb(116, 105, 105);
+text-align: center;
+}
