@@ -12,7 +12,12 @@ body{
 }
 .div1_0,.div1_1,.div1_2,.div1_3,.div1_4{
 box-shadow:  0px 0px 10px rgb(116, 105, 105);
-text-align: center;
+text-align: center;transition:box-shadow 0.5s ease,transform 1s ease  ;
+}
+.div1_0:hover,.div1_1:hover,.div1_2:hover,.div1_3:hover,.div1_4:hover{
+box-shadow:  0px 0px 10px rgb(202, 197, 197);
+transform: scale(1.05);
+
 }
 .div2{
     color: #ccc;text-align: center;margin-top: 8%;box-shadow: 0px 0px 10px rgb(116, 105, 105) ;
