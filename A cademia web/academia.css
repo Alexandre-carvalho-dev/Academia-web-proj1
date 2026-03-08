@@ -54,6 +54,25 @@ transform: scale(1.09);
 }
 .divfront{
     text-align: center;margin-top: 3%;
-    opacity: 50%;
-}
+    ;position: relative;
 
+  
+}
+.header{
+ position: absolute;
+   top: 20px;
+left: 70px;
+    display: flex;
+justify-content: space-between;
+width: 80%;
+
+}
+.links a{
+
+    text-decoration: none;
+ margin-right: 15px;
+}
+.a11{
+    color: orangered;padding: 14px 16px;border: 1px solid orangered;
+    border-radius: 5px;
+}

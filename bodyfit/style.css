@@ -1,0 +1,149 @@
+body{
+    margin: 0%;padding: 0%;font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    text-align: center;background-color: #bbb;
+    padding:1px;
+}
+header h1{
+    color: rgb(54, 61, 94);
+}
+nav ul{
+    display: flex;justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+nav ul li {
+    list-style-type: none;
+}
+nav  a:hover {
+    color: rgb(26, 48, 145);
+}
+
+nav  a{
+    text-decoration: none;color: blue;
+}
+
+
+/* primeira seção, seção de apresenntação do site*/
+.apresentação_site{
+background-color: rgb(253, 248, 248);
+
+}
+.apresentação_site_article{
+    display: flex;
+    justify-content: space-between;
+    padding:5% 8%;
+    
+}
+.apresentação_site_article button{
+    padding: 14px 40px;
+    background-color: rgb(236, 44, 18);
+    color: white;border-radius: 5px;
+    border: 1px solid  rgb(236, 44, 18);
+}
+.apresentação_site_article figure img{
+max-width: 100%;
+}
+
+/* seção de ofertas*/
+.seção_ofertas{
+    display: flex;
+    justify-content: center;gap: 70px;
+    
+   
+    
+}
+section h3{
+    text-align: center;
+}
+.seção_ofertas article{
+    box-shadow: 0 0 15px  rgb(163, 133, 133);
+    max-width: 35%;
+    text-align: center;
+    border-radius: 10px;
+
+}
+.seção_ofertas article li{
+
+color: rgb(36, 87, 70);
+}
+.seção_ofertas article img{
+max-width: 100%;
+}
+.seção_ofertas article figcaption{
+    
+    text-align: start;
+}
+.seção_ofertas figcaption button{
+    background-color: orangered;
+    margin-left: 40%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid  rgb(236, 44, 18);
+    color: white;
+}
+
+/* dicas*/
+aside{
+    
+    margin: 15% 2% 5% 2%;
+    background-color: #bbb;max-width: 300px;height:auto;
+    text-align: center;
+    padding-top: 50px;
+    z-index: 2;
+
+}
+
+aside h4{
+    text-align: center;
+}
+aside p{
+    text-align: start;
+}
+aside button{
+  margin-right:10px;
+    background-color: orangered;
+    padding: 5% 10%;
+    color: white;border-radius: 5px;
+    border: 1px solid  rgb(236, 44, 18);
+     
+}
+.dica{
+    margin-top: 0%;
+      margin-bottom: 30%;
+      padding-bottom: 200px;
+}
+
+aside img{
+   max-width: 100%;
+   max-height: auto;
+}
+ 
+/*   links da página para as nossas redes*/
+footer{
+    display: flex;
+    justify-content: space-around;gap: 30px;
+    margin-top: 10%;background-color: rgb(90, 87, 87);
+    color: white;
+}
+footer div{
+    max-width: 20%;
+    margin-bottom: 2%;
+}
+/* sobre as nossas academia local*/
+.academias_locais{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 0px;
+    max-width: 60%;
+    float: right;
+    background-color: rgb(255, 249, 243);
+}
+.seção2{
+    margin-top: 10%;
+}
+.seção2 h2{
+text-align: end;
+margin-right: 19%;
+}
