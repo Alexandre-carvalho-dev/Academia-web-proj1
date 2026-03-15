@@ -6,14 +6,14 @@
     <title>bodyfit</title><link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="cabeça">
         <h1>bodyfitness</h1>
         <nav>
             <ul>
-                <li><a href="#">ofertas</a></li>
-                <li><a href="#">benefícios</a></li>
-                <li><a href="#">dicas</a></li>
-                <li><a href="#">contato</a></li>
+                <li><a href="#ofertas">ofertas</a></li>
+                <li><a href="#conquistas">conquistas</a></li>
+                <li><a href="#dicas">dicas</a></li>
+                <li><a href="#contato">contato</a></li>
             </ul>
         </nav>
     </header>
@@ -22,10 +22,10 @@
           <article class="apresentação_site_article">
             <div>
                   <h2>transforme o seu corpo</h2>
-                  <p>transforme o seu corpo para uma versão melhor <br> com a melhor página de treino </p>
-                  <p></p> click no botão para saberes mais</p>
-                  <button>
-                    saber mais..
+                  <p>transforme o seu corpo para uma versão melhor <br> com a melhor academia do país </p>
+                  <p> A academia bodyfitness tem muito a oferecer para vc <br> inscreva-se para pertenceres as nossas academias</p>
+                  <button onclick="inscrever()">
+                    se inscrever...
                   </button>
             </div>
            <figure>
@@ -34,9 +34,9 @@
           </article>
         </section>
 
-        <section >
-            <h3>O bodyfitness nos oforece programa de treino perfeitos  </h3>
-            <div class="seção_ofertas">
+        <section class="seção1" >
+            <h3>O bodyfitness nos oferece programa de treino perfeitos  </h3>
+            <div class="seção_ofertas" id="ofertas">
             <article>
                 <h4>  parte superior do corpo</h4>
                 <figure>
@@ -62,9 +62,9 @@
                     <figcaption>
                         <p>encontrás treinos que elevam a tua autoconfiança e uma postura que dá a desejar</p>
                         <ul>
-                            <li>posterioor</li>
+                            <li>posterior</li>
                             <li>glúteis</li>
-                            <li>panturrílhas</li>
+                            <li>panturrilhas</li>
                             <li>quadríceps</li>
                             
                         </ul><br><br>
@@ -75,19 +75,19 @@
             </div>
         </section>
 
-        <section class="seção2">
+        <section class="seção2"    >
             <h2>todas as nossas academia locais</h2>
-            <article class="academias_locais">
+            <article class="academias_locais" id="conquistas">
 <figure>
 <img src="img/baixados (3).webp" alt="">
     <figcaption>
-Academia que se encontra n província de malange
+Academia que se encontra na província de malange
     </figcaption>
 </figure>
 <figure>
 <img src="img/baixados (2).webp" alt="">
     <figcaption>
-Academia que se encontra n província do Uige
+Academia que se encontra na província do Uige
     </figcaption>
 </figure>
 <figure>
@@ -99,7 +99,7 @@ Academia que se encontra na Marginal/Luanda
 <figure>
 <img src="img/baixados (4).webp" alt="">
     <figcaption>
-Academia que se encontra nem Cacuaco/Luanda
+Academia que se encontra em Cacuaco/Luanda
     </figcaption>
 </figure>
 <figure>
@@ -118,7 +118,7 @@ Academia que se encontra no primeiro de Maio
             </article>
         </section>
     </main>
-    <aside class="dica">
+    <aside class="dica" id="dicas">
         <div>
             <figure>
                 <img src="img/proteinas 1.webp" alt="">
@@ -133,11 +133,35 @@ Academia que se encontra no primeiro de Maio
         </button>
         </div>
     </aside>
-    <footer>
+    <aside class="inscrever">
+        <form action="" method="get">
+            <h3>inscrição</h3>
+           <div class="div1"> <label for="" class="lbnome">nome</label><br>
+            <input type="text" class="nome" id="nome" placeholder="insira seu nome">
+            </div>
+           <div> <label class="lbnemail" for="">email</label><br>
+            <input type="email" class="email" id="email" placeholder="insira seu email">
+            </div>
+           <div> <label for="">data_nascimento</label><br>
+            <input type="date" class="data" id="data" >
+            </div>
+            <div>
+              <p  onclick="submit()">enviar</p>
+            </div>
+        </form>
+    </aside>
+    
+    <aside class="asideE">
+
+    </aside>
+
+
+
+    <footer id="contato">
         <div>
             <h4>fundador da página</h4>
             <p>Alexandre de Carvalho</p>
-            <p>densevolvedor web, formado na área de TI, sonhador, que aprende todos dias e adora programar</p>
+            <p>desenvolvedor web, formado na área de TI, sonhador, que aprende todos dias e adora programar</p>
             <a href="#">saber mais...</a>
         </div>
         <div>
