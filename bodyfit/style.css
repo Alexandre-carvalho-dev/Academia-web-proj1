@@ -27,6 +27,9 @@ nav  a:hover {
 nav  a{
     text-decoration: none;color: blue;
 }
+.linkinscrever{
+    color: orangered;
+}
 
 
 /* primeira seção, seção de apresenntação do site*/
@@ -181,6 +184,9 @@ margin-right: 19%;
 .bodyE{
    overflow: hidden;
 }
+.body{
+   overflow:scroll;
+}
 
 
 
@@ -217,11 +223,12 @@ right: 0%;
 
 .inscrever{
      position: absolute;
-  top: 20%;
+  top: 30%;
   
   z-index: 1;
     display: none;
     justify-content: center;
+    align-items: center;
 
     
   width:100%;
@@ -240,7 +247,7 @@ form{
 
 }
 
-.div1{
+form .div1{
     margin-top: 50px;
 }
 
@@ -261,6 +268,20 @@ form h3{
   
 }
 
+.cadastro,.oferta,.header{
+    opacity: 5%;
+}
+.apresentação_site,.cabeça,.seção1{
+    opacity: 100%;
+}
+
+.bodyE1,.bodyE{
+    background-color: black;
+}
+.body{
+    background-color:transparent;
+}
+
 
 /* os pacotes de trinos*/
 .asideE{
@@ -274,7 +295,36 @@ form h3{
    flex-wrap: wrap;
    gap: 30px;
 }
-.divE{
+.divM{
+position: absolute;
+    top: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+.divf1{
+
+     max-width: 50%;
+    background-color: rgb(10, 65, 46);
+    text-align: center;
+    height: 350px;
+    padding-top: 30px;
+    border: 1px solid rgb(10, 65, 46);
+    border-radius: 15px;
+    box-shadow: 0 0 15px white;
+    color: white;
+    padding: 50px;
+    
+}
+ .btok{
+    padding: 10px;
+    cursor: pointer;
+}
+.divf1 ul{
+list-style-type: none;
+}
+.divE,.div2,.div3{
     width: 300px;
     background-color: rgb(10, 65, 46);
     text-align: center;
@@ -283,6 +333,7 @@ form h3{
     border: 1px solid rgb(10, 65, 46);
     border-radius: 15px;
     box-shadow: 0 0 15px white;
+    color: white;
 }
 .asideE ul{
     list-style-type: none;
@@ -303,6 +354,12 @@ form h3{
 }
 .seçãoE2,.dicaE,.contatoE{
 display: none;
+}
+.seçãoE2_1,.dicaE_1{
+display:block;
+}
+.contatoE_1{
+    display: flex;justify-content: space-around;
 }
 }
 
