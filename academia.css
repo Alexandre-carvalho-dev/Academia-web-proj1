@@ -1,16 +1,32 @@
 body{
     background-color:rgb(10, 1, 46);
 }
-header{
-    margin-top: 5%;
-    text-align: center;font-size: 15px;
-    text-shadow: 2px 2px 3px aqua;
-    font-family: Georgia, 'Times New Roman', Times, serif;margin-left: 25%;margin-right: 25%;
+.divfront{
+    text-align: center;margin-top: 3%;
+    ;position: relative;
+}
+.divfront img{
+     opacity: 50%;
+}
+.diva{
+    display: flex;
+    gap: 10px;
+}
+
+.header{
+ position: absolute;
+   top: 20px;
+left: 80px;
+    display: flex;
+justify-content: space-between;
+width: 80%;
+margin-top: 3%;
 
 }
-header:hover{
-    font-size: 16px;text-shadow: 2px 2px 3px rgb(17, 97, 202);
+main h1{
+    text-align: center;color: rgb(104, 94, 94);
 }
+
 .div0{
     margin-left: 10%;margin-right: 10%;text-align: center;
 }
@@ -25,7 +41,7 @@ header:hover{
     text-align: center;margin-top: 100px;display: flex;justify-content: space-around;flex-wrap: wrap;
 }
 .div1,.div2,.div3{
- margin-bottom: 100px;color: #adaaaa;box-shadow: 0px 0px 20px rgb(116, 105, 105);
+ margin-bottom: 100px;color: #adaaaa;box-shadow: 0px 0px 20px rgb(116, 105, 105);border-radius: 15px;
  transition: box-shadon 2s ease, transform 1s ease;
  
 }
@@ -33,41 +49,17 @@ header:hover{
 box-shadow: 0px 0px 20px rgb(221, 210, 210);
 transform: scale(1.09);
 }
-@media  screen and (max-width:1000px) {
- 
-.div1,.div2,.div3{
- margin-bottom: 100px;color: #adaaaa;box-shadow: 0px 0px 20px rgb(116, 105, 105);
- transition: box-shadon 2s ease, transform 1s ease;
- display:inline-block;
- margin-right: 10px;
- 
-}
-.div1:hover,.div2:hover,.div3:hover{
-box-shadow: 0px 0px 20px rgb(221, 210, 210);
-transform: scale(1.09);
-}
 
-}
-.divfront{
-    text-align: center;margin-top: 3%;
-    ;position: relative;
-
-  
-}
-.header{
- position: absolute;
-   top: 20px;
-left: 70px;
-    display: flex;
-justify-content: space-between;
-width: 80%;
-
-}
 .links a{
 
     text-decoration: none;
  margin-right: 15px;
 }
+.a9,.a10{
+    color: aqua;text-decoration: none;
+    font-size: 20px;
+}
+
 .a11{
     color: orangered;padding: 14px 16px;border: 1px solid orangered;
     border-radius: 5px;

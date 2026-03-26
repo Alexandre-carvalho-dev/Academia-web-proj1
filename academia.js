@@ -9,56 +9,36 @@ n1++
 
    },1000
 )
-function front(){
-   if(n===3){
-let publ=document.querySelector('.divfront')
-publ.innerHTML='<img src="img/pulldown-exercise-dwayne-johnson.gif" width="90%" height="500px" alt="">'
-   }
-
-   if(n===6){
-let publ=document.querySelector('.divfront')
-publ.innerHTML='<img src="img/jinder-mahal-lifting-weights.gif" width="90%" height="500px" alt="">'
-   }
-   if(n===9){
-let publ=document.querySelector('.divfront')
-publ.innerHTML='<img src="img/art-atwood.gif" width="90%" height="500px" alt="">'}
-   if(n===14){
-let publ=document.querySelector('.divfront')
-publ.innerHTML='<img src="img/peitoral.webp" width="90%" height="500px" alt="">'
-   }
-   if(n===20){
-n=0
-let publ=document.querySelector('.divfront')
-publ.innerHTML='<img src="img/working-out-dwayne-johnson.gif" width="90%" height="500px" alt="">'
+function reutilizaçao0(nr,img1r,n0){
+   if(n===nr){
+let img1=document.querySelector('.img1')
+img1.src=img1r
+n=n0
    }
 }
+function front(){
+   reutilizaçao0(3,"img/pulldown-exercise-dwayne-johnson.gif",3)
+   reutilizaçao0(6,"img/jinder-mahal-lifting-weights.gif",6)
+   reutilizaçao0(9,"img/art-atwood.gif",9)
+   reutilizaçao0(14,"img/peitoral.webp",14)
+   reutilizaçao0(20,"img/working-out-dwayne-johnson.gif",0)
+}
 
-
-
-function imagens(){
-   if(n1===5){
+function reutilizaçao1(ar,br,cr,n1r,n2r){
+    if(n1===n1r){
+n1=n2r
     let a=document.querySelector('.a1')
     let b=document.querySelector('.b1')
     let c=document.querySelector('.c1')
-    a.innerHTML='<img src="img/perna2.webp" width="300px" height="300px" title="clica para encaminhar-te aos treinos" alt="">'
-    b.innerHTML='<img src="img/pitoral2.webp" width="300px" height="300px" title="clica para encaminhar-te aos treinos" alt=""> '
-    c.innerHTML='<img src="img/whey.jpg" width="300px" height="300px" title="clica para encaminhar-te aos treinos" alt="">'
+    a.src=ar
+    b.src=br
+   c.src=cr
+   }
 }
-if(n1===10){
-   let a=document.querySelector('.a1')
-   let b=document.querySelector('.b1')
-    let c=document.querySelector('.c1')
-   a.innerHTML='<img src="img/perna3.webp" width="300px" height="300px" title="clica para entrares nas nossas dicas nutritivas" alt="">'
-   b.innerHTML='<img src="img/baixados.webp" width="300px" height="300px" title="clica para encaminhar-te aos treinos" alt="">'
-   c.innerHTML='<img src="img/proteinas2.webp" width="300px" height="300px" title="clica para encaminhar-te aos treinos" alt="">'
-}
-if(n1===15){
-   n1=0
- let a=document.querySelector('.a1')
- let b=document.querySelector('.b1')
-    let c=document.querySelector('.c1')
- a.innerHTML='<img src="img/OIP.webp" width="300px" height="300px" title="clica para encaminhar-te aos treinos" alt="">'
- b.innerHTML='<img src="img/peitoral.webp" width="300px" height="300px" title="clica para encaminhar-te aos treinos" alt="">'
- c.innerHTML='<img src="img/proteinas 1.webp" width=300px" height="300px" title="clica para encaminhar-te aos treinos" alt="">'
-}
+function imagens(){
+ reutilizaçao1("img/perna2.webp","img/pitoral2.webp","img/whey.jpg",5,5)
+
+    reutilizaçao1("img/perna3.webp","img/baixados.webp","img/proteinas2.webp",10,10)
+
+    reutilizaçao1("img/OIP.webp","img/peitoral.webp","img/proteinas 1.webp",15,0)
 }
