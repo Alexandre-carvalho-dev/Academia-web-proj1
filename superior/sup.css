@@ -5,7 +5,7 @@ body{
     text-align: center; margin-top: 5%;
 }
 .nav{
-   display: flex;justify-content: space-around;color: #ccc
+   display: flex;justify-content: space-around;color: #ccc;flex-wrap: wrap;gap: 30px;
 }
 .div1{
  margin-top: 5%;color: #ccc;text-align: center;
